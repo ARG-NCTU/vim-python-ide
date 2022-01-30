@@ -32,6 +32,37 @@ git clone https://github.com/rapphil/vim-python-ide.git && \
 cd vim-python-ide && ./install.sh
 ```
 
+It seems that plugin rope is causing some errors, just comment it out in ~/.vimrc
+```
+ " Plug 'python-rope/ropevim' 
+```
+
+
+
+## Basic Usages in Vim
+
+Check the [Cheat Sheet](https://vim.rtorr.com/).
+
+Buffer vs. Window
+* Window: we will have the file tree, code editor, and file structure (showing classes/functions/...)
+* Buffer: while we open multiple files to edit 
+* Move around between windows: Ctl ww
+* Move around between tabs: Tab or Shift Tab
+
+## Key bindings
+
+| Action                   | Mode             | key binding     |
+|--------------------------|------------------|-----------------|
+| Toogle Nerdtree          | Normal           | `crtl + n`      |
+| toogle Tagbar            | Normal           | `f8`            |
+| Look for file            | Normal           | `crtl + p`      |
+| Goto definition          | Normal           | `crtl + ]`      |
+| Show docstring           | Normal           | `K`             |
+| Extract method           | Normal/Visual    | `crlt + c r m`  |
+| Auto complete            | Insert           | `crtl + space`  |
+| Expand snippet           | Insert           |`tab`            |
+
+
 ## Features
 
 Please check the available features and the plugins that enable them.
@@ -62,29 +93,31 @@ Powered by:
 Easily navigate your project using:
 
  * File tree explore (Nerdtree)
-<img src="./img/nerdtree.gif"/>
-
 Usages:
-1. This will automatically open tree explore. 
+1. This will automatically open tree explore. Use Ctl ww to switch windows
 2. To close all:
 ```
 :qa or :wqa
 ```
 3. ~/.vimrc has set to toggle file tree by Ctl + n
 
- * Fuzzy finder based on the file names
-<img src="./img/fzf.gif"/>
+<img src="./img/nerdtree.gif"/>
 
+ * Fuzzy finder based on the file names
 Usages:
 1. Ctl + p, and search for your file to open and hit Enter. This will open it in "buffer"
 2. You could switch between buffers by Tab or Shift + Tab
+3. It appears that you could start it in your project folder
+
+<img src="./img/fzf.gif"/>
 
  * File structure (classes, functions, methods).
-<img src="./img/tagbar.gif"/>
-
 Usages:
 1. You could press <F8> to show the file structure.
 2. TODO: how to move to Tagbar. Perhaps just use defulat search /
+
+<img src="./img/tagbar.gif"/>
+
 
 Powered by:
 
@@ -156,18 +189,6 @@ Powered by:
  * [vim-fugitive](https://github.com/tpope/vim-fugitive)
  * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 
-## Key bindings
-
-| Action                   | Mode             | key binding     |
-|--------------------------|------------------|-----------------|
-| Toogle Nerdtree          | Normal           | `crtl + n`      |
-| toogle Tagbar            | Normal           | `f8`            |
-| Look for file            | Normal           | `crtl + p`      |
-| Goto definition          | Normal           | `crtl + ]`      |
-| Show docstring           | Normal           | `K`             |
-| Extract method           | Normal/Visual    | `crlt + c r m`  |
-| Auto complete            | Insert           | `crtl + space`  |
-| Expand snippet           | Insert           |`tab`            |
 
 ## Commands
 
