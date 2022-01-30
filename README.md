@@ -46,6 +46,11 @@ It seems that plugin rope is causing some errors, just comment it out in ~/.vimr
  " Plug 'python-rope/ropevim' 
 ```
 
+Here we also disable open NerdTree while open vim
+```
+" autocmd VimEnter * NERDTree
+```
+
 ### Add vim-ros (Optional)
 
 Make sure you have ROS installed, and Python3 could find it.
@@ -114,18 +119,17 @@ Powered by:
 Easily navigate your project using:
 
  * File tree explore (Nerdtree)
-Usages:
-1. This will automatically open tree explore. Use Ctl ww to switch windows
-2. To close all:
+1. Ctl n to toggle the tree explorer
+2. Use Ctl ww to switch windows
+3. To close all:
 ```
 :qa or :wqa
 ```
-3. ~/.vimrc has set to toggle file tree by Ctl + n
+4. ~/.vimrc has set to toggle file tree by Ctl + n
 
 <img src="./img/nerdtree.gif"/>
 
  * Fuzzy finder based on the file names
-Usages:
 1. Ctl + p, and search for your file to open and hit Enter. This will open it in "buffer"
 2. You could switch between buffers by Tab or Shift + Tab
 3. It appears that you could start it in your project folder
@@ -133,9 +137,8 @@ Usages:
 <img src="./img/fzf.gif"/>
 
  * File structure (classes, functions, methods).
-Usages:
 1. You could press <F8> to show the file structure.
-2. TODO: how to move to Tagbar. Perhaps just use defulat search /
+2. Use Ctl ww to set focus on window Tagbar. You could move the function/class for a quick navigation
 
 <img src="./img/tagbar.gif"/>
 
