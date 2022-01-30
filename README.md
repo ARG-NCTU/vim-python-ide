@@ -63,15 +63,34 @@ Easily navigate your project using:
 
  * File tree explore (Nerdtree)
 <img src="./img/nerdtree.gif"/>
+
+Usages:
+1. This will automatically open tree explore. 
+2. To close all:
+```
+:qa or :wqa
+```
+3. ~/.vimrc has set to toggle file tree by Ctl + n
+
  * Fuzzy finder based on the file names
 <img src="./img/fzf.gif"/>
+
+Usages:
+1. Ctl + p, and search for your file to open and hit Enter. This will open it in "buffer"
+2. You could switch between buffers by Tab or Shift + Tab
+
  * File structure (classes, functions, methods).
 <img src="./img/tagbar.gif"/>
+
+Usages:
+1. You could press <F8> to show the file structure.
+2. TODO: how to move to Tagbar. Perhaps just use defulat search /
+
 Powered by:
 
  * [Nerdtree](https://github.com/scrooloose/nerdtree)
  * [Fzf](https://github.com/junegunn/fzf.vim)
- * [Tagbar](https://majutsushi.github.io/tagbar/)
+ * [Tagbar](https://github.com/preservim/tagbar)
 
 ### Powerfull Full Text search
 
