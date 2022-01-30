@@ -33,12 +33,6 @@ libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
 python3-dev git ctags
 ```
 
-### Requirements for Fedora distros
-
-```bash
-sudo dnf install -y ctags git python python-devel \
-python3 python3-devel tcl-devel
-```
 
 ### Installation process
 
@@ -50,6 +44,18 @@ cd vim-python-ide && ./install.sh
 It seems that plugin rope is causing some errors, just comment it out in ~/.vimrc
 ```
  " Plug 'python-rope/ropevim' 
+```
+
+### Add vim-ros (Optional)
+
+Make sure you have ROS installed, and Python3 could find it.
+```
+cd ~/.vim/plugged
+git clone https://github.com/ARG-NCTU/vim-ros
+```
+Add or uncomment to ~/.vimrc
+```
+Plug 'ARG-NCTU/vim-ros'
 ```
 
 
