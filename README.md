@@ -11,6 +11,21 @@ provided an automatic installation procedure for this set.
 
 ### Requirements for Ubuntu distros (Tested on Windows Subsystem for Linux)
 
+Ubuntu 20.04
+
+The following packages are excluded from Ubuntu 20.04. We do not seem to need them.
+* libgnome2-dev libgnomeui-dev libbonoboui2-dev 
+* This will also install python2 (python-dev)
+
+```bash
+sudo apt install libncurses5-dev \
+libgtk2.0-dev libatk1.0-dev \
+libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
+python3-dev git ctags
+```
+
+Ubuntu 18.04
+
 ```bash
 sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev \
 libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
