@@ -80,7 +80,8 @@ Buffer vs. Window
 | Action                   | Mode             | key binding     |
 |--------------------------|------------------|-----------------|
 | Toogle Nerdtree          | Normal           | `crtl + n`      |
-| toogle Tagbar            | Normal           | `f8`            |
+| Toogle Tagbar            | Normal           | `f8`            |
+| Run Python.              | Normal           | `f9`            |
 | Look for file            | Normal           | `crtl + p`      |
 | Goto definition          | Normal           | `crtl + ]`      |
 | Show docstring           | Normal           | `K`             |
@@ -88,6 +89,10 @@ Buffer vs. Window
 | Auto complete            | Insert           | `crtl + space`  |
 | Expand snippet           | Insert           |`tab`            |
 
+Run Python in normal mode
+```
+:!clear; python %
+```
 
 ## Features
 
