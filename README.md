@@ -53,6 +53,11 @@ in line 45
 " autocmd VimEnter * NERDTree
 ```
 
+Add the following to the last line of ~/.vimrc to allow <F9> to save and run code
+```
+nmap <F9> <Esc>:w<CR>:!clear;python %<CR>
+```
+
 ### Add vim-ros (Optional)
 
 Make sure you have ROS installed, and Python3 could find it.
