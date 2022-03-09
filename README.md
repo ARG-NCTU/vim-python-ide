@@ -42,11 +42,13 @@ cd vim-python-ide && ./install.sh
 ```
 
 It seems that plugin rope is causing some errors, just comment it out in ~/.vimrc
+in line 5
 ```
  " Plug 'python-rope/ropevim' 
 ```
 
 Here we also disable open NerdTree while open vim
+in line 45
 ```
 " autocmd VimEnter * NERDTree
 ```
