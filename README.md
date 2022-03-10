@@ -55,7 +55,8 @@ in line 45
 
 Add the following to the last line of ~/.vimrc to allow <F9> to save and run code
 ```
-nmap <F9> <Esc>:w<CR>:!clear;python %<CR>
+autocmd vimEnter *.py nmap <F9> <Esc>:w<CR>:!clear;python %<CR>                 
+autocmd vimEnter *.cpp map <F9> :w <CR> :!clear ; g++ --std=c++17 %; if [ -f a.out ]; then time ./a.out; rm a.out; fi <CR>
 ```
 
 ### Add vim-ros (Optional)
