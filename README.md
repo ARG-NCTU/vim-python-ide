@@ -89,12 +89,15 @@ Buffer vs. Window
 | Toogle Nerdtree          | Normal           | `crtl + n`      |
 | Toogle Tagbar            | Normal           | `f8`            |
 | Run Python.              | Normal           | `f9`            |
+| Switch Focus             | Normal           | `crtl + ww`     |
+| Expand snippet           | Insert           |`tab`            |
+|--------------------------|------------------|-----------------|
 | Look for file            | Normal           | `crtl + p`      |
 | Goto definition          | Normal           | `crtl + ]`      |
 | Show docstring           | Normal           | `K`             |
 | Extract method           | Normal/Visual    | `crlt + c r m`  |
 | Auto complete            | Insert           | `crtl + space`  |
-| Expand snippet           | Insert           |`tab`            |
+
 
 Run Python in normal mode
 ```
