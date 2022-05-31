@@ -37,7 +37,7 @@ python3-dev git ctags
 ### Installation process
 
 ```bash
-git clone https://github.com/rapphil/vim-python-ide.git && \
+git clone git@github.com:ARG-NCTU/vim-python-ide.git && \
 cd vim-python-ide && ./install.sh
 ```
 
