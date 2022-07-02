@@ -6,7 +6,7 @@ CURDIR=${PWD}
 # CPUS=$(grep -c ^processor /proc/cpuinfo)
 # 
 read -p "Please backup your .vimrc file and .vim directory before starting. Press [Enter] to continue."
-#rm -rf ~/.vim
+rm -rf ~/.vim
 
 #  
 # git clone --branch $VIM_VERSION https://github.com/vim/vim.git /tmp/vim-build/
@@ -43,6 +43,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree  
 git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/colorschemes
 git clone https://github.com/preservim/tagbar ~/.vim/bundle/tagbar
+git clone https://github.com/junegunn/fzf.vim ~/.vim/bundle/fzf.vim
 
 cd ${CURDIR} && cat ${CURDIR}/mac_configs > ${HOME}/.vimrc
 

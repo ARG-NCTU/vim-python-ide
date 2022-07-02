@@ -1,5 +1,10 @@
 execute pathogen#infect()
 
+" call plug#begin('~/.vim/bundle')
+" Plug 'flazz/vim-colorschemes'
+" Plug 'scrooloose/nerdtree'
+" call plug#end()
+
 "
 " Theme options
 set t_Co=256
