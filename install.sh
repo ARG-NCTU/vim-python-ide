@@ -13,7 +13,7 @@ cd /tmp/vim-build
 
 make -j $CPUS && make install
 
-pip2 install --user rope jedi ropevim flake8
+pip3 install --user rope jedi ropevim flake8
 
 UPDATE_PATH='export PATH=${HOME}/tools/vim/bin:$PATH'
 
