@@ -89,7 +89,7 @@ Buffer vs. Window
 |--------------------------|------------------|-----------------|
 | Toogle Nerdtree          | Normal           | `crtl + n`      |
 | Toogle Tagbar            | Normal           | `f8`            |
-| Run Python.              | Normal           | `f9`            |
+| Run Python / C++         | Normal           | `f9`            |
 | Switch Focus             | Normal           | `crtl + ww`     |
 | Expand snippet           | Insert           |`tab`            |
 |--------------------------|------------------|-----------------|
@@ -102,7 +102,7 @@ Buffer vs. Window
 
 Run Python in normal mode
 ```
-:!clear; python %
+:!clear; python3 %
 ```
 
 ## Features
