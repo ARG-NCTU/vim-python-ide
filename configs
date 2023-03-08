@@ -57,4 +57,5 @@ let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 nmap <F8> :TagbarToggle<CR>
 autocmd vimEnter *.py nmap <F9> <Esc>:w<CR>:!clear;python3 %<CR>
 autocmd vimEnter *.cpp map <F9> :w <CR> :!clear ; g++ --std=c++17 %; if [ -f a.out ]; then time ./a.out; rm a.out; fi <CR> 
+:vnoremap <f10> :!python3<CR>
 
