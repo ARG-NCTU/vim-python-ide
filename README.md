@@ -90,6 +90,7 @@ Buffer vs. Window
 | Toogle Nerdtree          | Normal           | `crtl + n`      |
 | Toogle Tagbar            | Normal           | `f8`            |
 | Run Python / C++         | Normal           | `f9`            |
+| Run Python Selectively   | Visual           | `f10`           |
 | Switch Focus             | Normal           | `crtl + ww`     |
 | Expand snippet           | Insert           |`tab`            |
 |--------------------------|------------------|-----------------|
@@ -99,11 +100,17 @@ Buffer vs. Window
 | Extract method           | Normal/Visual    | `crlt + c r m`  |
 | Auto complete            | Insert           | `crtl + space`  |
 
+If you want to use `F10` to run the seleted code, you must first in the visual mode.
+ 
+The result of seleted code will replace the selected block of code. 
+ 
+You can simply press `u` to undo this change and get back the lines of code you typed. 
 
-Run Python in normal mode
+
+<!--- Run Python in normal mode
 ```
 :!clear; python3 %
-```
+``` --->
 
 ## Features
 
