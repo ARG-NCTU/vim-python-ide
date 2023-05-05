@@ -177,9 +177,9 @@ Powered by:
  * Full text search based on both exact match and fuzzy finder capabilities
  * Extremely fast.
 
-You will need to install ripgraph
+You will need to install ripgrep
 ```
-sudo apt install ripgraph
+sudo apt install ripgrep
 ```
 
 | Command Description            | Command        |
