@@ -21,7 +21,7 @@ The following packages are excluded from Ubuntu 20.04. We do not seem to need th
 sudo apt install libncurses5-dev \
 libgtk2.0-dev libatk1.0-dev \
 libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
-python3-dev git ctags
+python3-dev git ctags ripgrep
 ```
 
 Ubuntu 18.04
@@ -30,7 +30,7 @@ Ubuntu 18.04
 sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev \
 libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
 libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
-python3-dev git ctags
+python3-dev git ctags ripgrep
 ```
 
 
@@ -176,6 +176,19 @@ Powered by:
 
  * Full text search based on both exact match and fuzzy finder capabilities
  * Extremely fast.
+
+You will need to install ripgrep
+```
+sudo apt install ripgrep
+```
+
+| Command Description            | Command        |
+|--------------------------------|----------------|
+| Look for string                | `:Rg <string>` |
+
+```
+rg > further_search_string
+```
 <img src="./img/ripgrep.gif"/>
 
 Powered by:
